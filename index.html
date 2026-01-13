@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marcos — Portafolio</title>
+  <meta name="description" content="Portafolio de diseño, fotografía y programación web. Proyectos, servicios y contacto." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo"></span>
+      <div class="brand-text">
+        <h1>Marcos</h1>
+        <p>Creative Director · Web & Visual Design</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-list">
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#contacto" class="cta">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Diseño que vende. Código que funciona.</h2>
+      <p>Portafolio mobile-first con fotografía editorial, catálogos web y programación a medida.</p>
+      <div class="hero-actions">
+        <a href="#proyectos" class="btn primary">Ver proyectos</a>
+        <a href="#servicios" class="btn">Servicios</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="assets/hero.jpg" alt="Editorial fashion con iluminación suave y fondo aspiracional" />
+    </div>
+  </section>
+
+  <section id="proyectos" class="section">
+    <div class="section-head">
+      <h3>Proyectos</h3>
+      <div class="filters">
+        <button data-filter="all" class="filter active">Todos</button>
+        <button data-filter="web" class="filter">Web</button>
+        <button data-filter="foto" class="filter">Foto</button>
+        <button data-filter="catalogo" class="filter">Catálogo</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      <!-- Proyecto 1 -->
+      <article class="card" data-tags="web catalogo">
+        <img src="assets/proyecto-catalogo.jpg" alt="Catálogo web SS24 con tipografía decorativa y grid técnico" />
+        <div class="card-body">
+          <h4>Catálogo SS24 — Web</h4>
+          <p>Landing mobile-first con grid técnico, filtros y tabla de talles.</p>
+          <div class="meta">
+            <span>HTML/CSS/JS</span><span>Optimización móvil</span>
+          </div>
+          <div class="actions">
+            <a href="#" class="btn small">Demo</a>
+            <a href="#" class="btn small ghost">Código</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Proyecto 2 -->
+      <article class="card" data-tags="foto editorial">
+        <img src="assets/proyecto-editorial.jpg" alt="Editorial con siluetas limpias, fondos aspiracionales y luz direccional" />
+        <div class="card-body">
+          <h4>Editorial — Mujeres</h4>
+          <p>Dirección de arte: siluetas, fondos, iluminación y tono emocional.</p>
+          <div class="meta">
+            <span>Retouch</span><span>Color grading</span>
+          </div>
+          <div class="actions">
+            <a href="#" class="btn small">Galería</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Proyecto 3 -->
+      <article class="card" data-tags="web foto catalogo">
+        <img src="assets/proyecto-collage.jpg" alt="Collage promocional con tipografía sticker y CTA comercial" />
+        <div class="card-body">
+          <h4>Collage Promocional</h4>
+          <p>Sticker-like type, CTA claro y composición comercial.</p>
+          <div class="meta">
+            <span>Branding</span><span>JS ligero</span>
+          </div>
+          <div class="actions">
+            <a href="#" class="btn small">Ver</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="servicios" class="section alt">
+    <h3>Servicios</h3>
+    <div class="services">
+      <div class="service">
+        <h4>Diseño & Editorial</h4>
+        <ul>
+          <li>Dirección de arte y estilismo</li>
+          <li>Retouch y color grading</li>
+          <li>Layouts de catálogo y tablas técnicas</li>
+        </ul>
+      </div>
+      <div class="service">
+        <h4>Web & Programación</h4>
+        <ul>
+          <li>Landing pages y portfolios</li>
+          <li>Optimización móvil y performance</li>
+          <li>Integración HTML/CSS/JS</li>
+        </ul>
+      </div>
+      <div class="service">
+        <h4>Branding & Mensaje</h4>
+        <ul>
+          <li>Tipografía decorativa y stickers</li>
+          <li>Copy comercial y CTAs</li>
+          <li>Guías de estilo</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre-mi" class="section">
+    <h3>Sobre mí</h3>
+    <p>Creative Director y diseñador visual en La Habana. Orquesto estilismo, fondos, iluminación, mensaje y layouts técnicos para resultados comerciales y estéticos. Ahora también desarrollo activos digitales y web.</p>
+    <div class="bio-grid">
+      <div>
+        <h5>Enfoque</h5>
+        <p>Mobile-first, claridad comercial y emoción visual.</p>
+      </div>
+      <div>
+        <h5>Herramientas</h5>
+        <p>HTML/CSS/JS, edición de imagen, tipografía y grids.</p>
+      </div>
+      <div>
+        <h5>Idiomas</h5>
+        <p>Español e inglés para dirección creativa.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section alt">
+    <h3>Contacto</h3>
+    <form class="contact-form" action="https://formspree.io/f/your-id" method="POST">
+      <label>Nombre
+        <input type="text" name="name" placeholder="Marcos" required>
+      </label>
+      <label>Email
+        <input type="email" name="email" placeholder="marcosdavidim2003@gmail.com" required>
+      </label>
+      <label>Mensaje
+        <textarea name="message" rows="4" placeholder="Cuéntame tu proyecto" required></textarea>
+      </label>
+      <button type="submit" class="btn primary">Enviar</button>
+    </form>
+    <div class="contact-alt">
+      <p>También por WhatsApp o Instagram: <a href="#"></a></p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2026 Marcos — Portafolio. Hecho con HTML/CSS/JS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+  </html>
